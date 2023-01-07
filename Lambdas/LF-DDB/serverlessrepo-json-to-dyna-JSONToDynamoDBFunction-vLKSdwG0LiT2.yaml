@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  serverlessrepojsontodynaJSONToDynamoDBFunctionvLKSdwG0LiT2:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: app.lambdaHandler
+      Runtime: nodejs12.x
+      CodeUri: .
+      Description: ''
+      MemorySize: 128
+      Timeout: 780
+      Role: >-
+        arn:aws:iam::436831233028:role/serverlessrepo-json-to-dy-JSONToDynamoDBFunctionRo-1MZK8419A6BD2
+      Environment:
+        Variables:
+          TABLE_NAME: Yelp-Restaurants
+      Tags:
+        'serverlessrepo:semanticVersion': 0.0.5
+        'lambda:createdBy': SAM
+        'serverlessrepo:applicationId': >-
+          arn:aws:serverlessrepo:us-east-1:675087241163:applications/json-to-dynamodb-importer

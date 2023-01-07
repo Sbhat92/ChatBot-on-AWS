@@ -1,0 +1,7 @@
+temp.py -- creating a file to upload data to open search
+
+CLI command to do that:
+curl -XPOST -u master:MasterMaster6969! https://search-finalrestaurants-syz5r6acw2zmj3gblcras3xdru.us-east-1.es.amazonaws.com/_bulk --data-binary @uploadOS.json -H 'Content-Type: application/json'
+
+I use a lambda function serverlessrepo.. to upload a compatable json file to dynamoDB
+Query dynamodb happens in LF2
